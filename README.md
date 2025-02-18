@@ -1,1 +1,1 @@
-# sistema_de_recomendacao_de_imagens
+# Criando um Sistema de Recomendação por Imagens Digitais
