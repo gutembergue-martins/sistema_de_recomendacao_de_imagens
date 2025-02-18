@@ -3,7 +3,7 @@
 
 <p align="center">
 <img 
-    src="imagem/img_programmer_github.png"
+    src="images/img_programmer_github.png"
     width="300"
 />
 </p>
