@@ -1,31 +1,37 @@
-Sistema de Recomendação de Imagens com Redes Neurais
+## Sistema de Recomendação de Imagens com Redes Neurais
+
 Este projeto demonstra como utilizar um modelo pré-treinado (ResNet50) para extrair características (features) de imagens e recomendar imagens similares com base na similaridade cosseno. O script integra a busca por imagens na web (usando o Google Imagens), o upload interativo da imagem de referência (via Google Colab) e a exibição dos resultados.
 
-Funcionalidades
-Upload de Imagem: Permite que o usuário faça upload de uma imagem de referência.
-Extração de Features: Utiliza a ResNet50 (com a última camada removida) para extrair embeddings da imagem.
-Busca de Imagens: Realiza scraping no Google Imagens para coletar URLs de imagens relacionadas à query "tênis".
-Cálculo de Similaridade: Compara o embedding da imagem de referência com os embeddings das imagens candidatas usando a similaridade cosseno.
-Exibição de Resultados: Mostra, lado a lado, a imagem de referência e as imagens recomendadas.
-Dependências
+### Funcionalidades
+
+- **Upload de Imagem:** Permite que o usuário faça upload de uma imagem de referência.
+- **Extração de Features:** Utiliza a ResNet50 (com a última camada removida) para extrair embeddings da imagem.
+- **Busca de Imagens:** Realiza scraping no Google Imagens para coletar URLs de imagens relacionadas à query "tênis".
+- **Cálculo de Similaridade:** Compara o embedding da imagem de referência com os embeddings das imagens candidatas usando a similaridade cosseno.
+- **Exibição de Resultados:** Mostra, lado a lado, a imagem de referência e as imagens recomendadas.
+
+## Dependências
+
 Certifique-se de ter as seguintes bibliotecas instaladas:
 
-Python 3.x
-requests
-numpy
-torch
-torchvision
-Pillow
-scikit-learn
-beautifulsoup4
-matplotlib
-google.colab (caso use o Google Colab)
-Observação: O código foi desenvolvido e testado no Google Colab, aproveitando o widget de upload disponível na plataforma.
+- Python 3.x
+- requests
+- numpy
+- torch
+- torchvision
+- Pillow
+- scikit-learn
+- beautifulsoup4
+- matplotlib
+- google.colab (caso use o Google Colab)
 
-Como Utilizar
-Configuração do Ambiente:
+### **Observação: O código foi desenvolvido e testado no Google Colab, aproveitando o widget de upload disponível na plataforma.**
 
-Recomenda-se utilizar o Google Colab para executar o código, pois ele facilita o upload de arquivos.
+## Como Utilizar
+
+**1. Configuração do Ambiente:**
+
+- Recomenda-se utilizar o [Google Colab](colab.new) para executar o código, pois ele facilita o upload de arquivos.
 Caso execute localmente, adapte a parte de upload (por exemplo, utilizando um seletor de arquivos do seu ambiente).
 Execução do Script:
 
