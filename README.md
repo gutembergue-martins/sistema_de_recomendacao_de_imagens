@@ -33,7 +33,7 @@
 
  > ℹ️ **NOTE:** Este repositório foi desenvolvido durante o BootCamp BairesDev - Machine Learning Practitioner em parceria com a [DIO](https://dio.me)
 
-Este projeto tem como objetivo aplicar o conhecimento difundido nas aulas teóricas para realizar a implementação de uma rede neural partindo do zero, com o propósito que esta seja capaz de efetuar detecção e classificação de rosto de pessoas em imagens.
+Este projeto tem como objetivo aplicar o conhecimento difundido nas aulas teóricas para criar um Sistema de Recomendação por Imagens Digitais, com o propósito que esta seja capaz de efetuar buscas através de imagens.
 
 
 ## 💻 Tecnologias utilizadas no projeto
@@ -42,7 +42,7 @@ Este projeto tem como objetivo aplicar o conhecimento difundido nas aulas teóri
 - [DeepSeek](https://chat.deepseek.com/)
 - [Google Colab](https://colab.google/)
 - [Google Imagens](https://images.google.com/?hl=pt-br)
-- [LabelMe](http://labelme.csail.mit.edu/Release3.0/)
+
 
 
 ## ✨ Como foi feito ?
@@ -51,55 +51,53 @@ Este projeto tem como objetivo aplicar o conhecimento difundido nas aulas teóri
 - O chatgpt foi utilizado para gerar insights e aprofundamento do conhecimento
 - O DeepSeek foi utilizado para a depuração e refatoração do código
 - O Google Imagens foi utilizado para baixar imagens para o projeto
-- O LabelMe teve como propósito treinamento na aplicação do rótulo nas imagens
+
 
 ## 🛠️ Instruções de execução
 
-As instruções para a realização deste projeto foram difundidas no módulo de Frameworks de Deep Learning do referido Bootcamp da DIO, onde além da explanação teórica foi disponibilizado orientações para a execução do projeto nos seguintes sítios:
-- Detecção Facial
-[(https://colab.research.google.com/github/ultralytics/yolov3/blob/master/tutorial.ipynb)](https://colab.research.google.com/drive/1QnC7lV7oVFk5OZCm75fqbLAfD9qBy9bw?usp=sharing )
-- Detecção e classificação de objetos<br>
-[(http://labelme.csail.mit.edu/Release3.0/)](https://colab.research.google.com/drive/1xdjyBiY75MAVRSjgmiqI7pbRLn58VrbE?usp=sharing )
+As instruções para a realização deste projeto foram difundidas no módulo de Processamento de Imagens com Machine Learning do referido Bootcamp da DIO, onde além da explanação teórica foi disponibilizado orientações para a execução do projeto nos seguintes sítios:
+- Criando um Sistema de Recomendação por Imagens Digitais<br>
+https://colab.research.google.com/github/sparsh-ai/rec-tutorials/blob/master/_notebooks/2021-04-27-image-similarity-recommendations.ipynb
 
 ## Descrição
 
-O reconhecimento facial é uma tecnologia avançada baseada em visão computacional e inteligência artificial que tem se tornado essencial em diversos setores da sociedade na atualidade.
+O Processamento de Imagem é uma área da computação que usa técnicas matemáticas e algoritmos para modificar, analisar e interpretar imagens digitais. Ele permite melhorar a qualidade das imagens, identificar padrões e até reconhecer objetos automaticamente.
 
-### Importância e Aplicabilidade
+### 🛍️ Aplicação em Sistemas de Recomendação por Imagens<br>
 
-- **Segurança e Vigilância:** Utilizado em aeroportos, prédios governamentais e empresas para controle de acesso e monitoramento.
-- **Autenticação e Privacidade:** Aplicado em dispositivos móveis e sistemas bancários para desbloqueio de telas e pagamentos seguros.
-- **Saúde e Diagnóstico:** Usado para identificar sintomas de doenças raras e monitorar expressões faciais em tratamentos médicos.
-- **Marketing e Experiência do Usuário:** Empresas utilizam a tecnologia para personalizar anúncios e analisar reações dos consumidores.
-- **Setor Público e Investigações:** Auxilia na identificação de criminosos e na busca por pessoas desaparecidas.
+Nos Sistemas de Recomendação por Imagens Digitais, o processamento de imagem é essencial para analisar características visuais, como cores, formas e texturas, e sugerir produtos ou conteúdos similares.
 
-### Passos para Desenvolver um Sistema de Detecção Facial
+Com essa tecnologia, as recomendações se tornam mais precisas e personalizadas, melhorando a experiência do usuário. 🚀
 
-**1. Escolher uma Biblioteca ou Framework**<br>
-- OpenCV, Dlib, TensorFlow ou Mediapipe.<br>
-    
-**2. Carregar a Imagem ou Vídeo**<br>
-- Utilizar OpenCV (cv2.imread()) para carregar imagens.<br>
-    
-**3. Pré-processamento da Imagem**<br>
-- Converter para tons de cinza para otimizar a detecção.<br>
-    
-**4. Usar um Classificador Pré-Treinado**<br>
-- Modelos como Haarcascade ou DNN para detectar rostos.<br>
-    
-**5. Desenhar as Caixas Delimitadoras**<br>
-- Criar retângulos ao redor dos rostos detectados (cv2.rectangle()).<br>
-    
-**6. Treinar um Modelo para Classificação Facial (Opcional)**<br>
-- Utilizar redes neurais para classificar os rostos detectados.<br>
+### 📌 Importância do Sistema de Recomendação por Imagens Digitais
+Atualmente, os Sistemas de Recomendação por Imagens Digitais desempenham um papel essencial em diversas áreas, como e-commerce, redes sociais e entretenimento. Sua importância está em:
 
-**7. Exibir e Testar o Sistema**<br>
-- Utilizar cv2.imshow() para visualizar a saída.<br>
+✅ Melhoria da experiência do usuário – Recomendando produtos e conteúdos personalizados com base em imagens.<br>
+✅ Aumento do engajamento – Plataformas como Instagram e Pinterest utilizam esses sistemas para sugerir conteúdos visuais atrativos.<br>
+✅ Otimização de vendas – No e-commerce, imagens semelhantes ajudam clientes a encontrar produtos de interesse rapidamente.<br>
+✅ Aplicações em saúde e segurança – Reconhecimento de padrões em imagens médicas e sistemas de vigilância.<br>
+✅ E-commerce: Sugestão de produtos parecidos com base em imagens (ex: "clientes que compraram este tênis também gostaram destes modelos").<br>
+✅ Plataformas de Streaming: Recomendação de filmes ou séries com base nos pôsteres e estilos visuais.<br>
+✅ Moda e Beleza: Aplicativos que sugerem roupas ou maquiagens parecidas com as que o usuário pesquisou.
+
+### 🔹Passos para Criar um Sistema de Recomendação por Imagens<br>
+1️⃣ Coletar e preparar os dados – Obter um conjunto de imagens relevantes e organizá-las com metadados.<br>
+2️⃣ Pré-processamento das imagens – Normalizar tamanhos, ajustar cores e remover ruídos.<br>
+3️⃣ Extração de características – Utilizar técnicas como redes neurais convolucionais (CNNs) para identificar padrões visuais.<br>
+4️⃣ Criação de um modelo de similaridade – Implementar algoritmos como k-NN, PCA ou aprendizado profundo para comparar imagens.<br>
+5️⃣ Treinamento e avaliação – Ajustar hiperparâmetros e testar o sistema com métricas de acurácia.<br>
+6️⃣ Integração com uma aplicação – Disponibilizar o sistema via API ou diretamente em uma plataforma web/app.
 
 
-### Conclusão
+### 🎯 Conclusão
+Para quem está iniciando em Machine Learning aplicado ao Processamento de Imagens, é essencial seguir uma abordagem estruturada:
 
-🚀 Para iniciantes em Machine Learning e Visão Computacional, é recomendável começar com conceitos básicos de Python e OpenCV, explorando bibliotecas como Mediapipe e TensorFlow. Praticar projetos simples, como detecção e reconhecimento de rostos, é um ótimo primeiro passo antes de avançar para modelos mais sofisticados, como redes neurais convolucionais (CNNs). Além disso, utilizar datasets públicos e experimentar modelos pré-treinados pode acelerar o aprendizado.
+✔ Dominar os fundamentos de Python – Bibliotecas como NumPy, Pandas e Matplotlib são indispensáveis.<br>
+✔ Aprender manipulação de imagens – Utilizar ferramentas como OpenCV e PIL para pré-processamento e análise de imagens.<br>
+✔ Estudar redes neurais e deep learning – Explorar frameworks como TensorFlow e PyTorch para treinar modelos.<br>
+✔ Trabalhar com datasets abertos – Experimentar conjuntos como MNIST, ImageNet e COCO para ganhar experiência prática.<br>
+✔ Começar com projetos simples – Desenvolver filtros de imagem, reconhecimento de objetos e classificação de imagens.<br>
+✔ Participar de competições – Desafios no Kaggle ajudam a consolidar o aprendizado e aprimorar habilidades.<br>
 
 ## 👨‍💻 Novato
 
